@@ -21,9 +21,8 @@
 	</head>
 	<body class="pt-4">
 		<header #="top">
-			<nav
-				class="navbar fixed-top navbar-expand-lg bg-white bg-gradient border-1 border-bottom py-3"
-			>
+			<!-- Nav Bar -->
+			<nav class="navbar fixed-top navbar-expand-lg bg-light bg-gradient border-1 border-bottom py-3">
 				<div class="container-xl">
 					<img src="images/ohmeLogo.png" class="img-fluid" alt="" />
 					<button
@@ -54,7 +53,9 @@
 					</div>
 				</div>
 			</nav>
-			<div class="container-fluid py-5 my-5">
+
+			<!-- Main section -->
+			<div class="container-fluid pt-5 ">
 				<div class="container-xl">
 					<div class="row vh-50 d-flex align-items-center">
 						<div class="col-md-6">
@@ -76,45 +77,22 @@
 				</div>
 			</div>
 		</header>
+
 		<main id="#main">
-			<div class="container-lg py-5">
-				<div
-					class="row justify-content-md-center justify-content-sm-start my-5"
-				>
-					<div class="col-8">
-						<p class="text-md-center text-primary text-uppercase fw-bold fs-6">
-							<small>Get Started</small>
-						</p>
-						<p class="text-md-center fs-2 fw-semibold">
-							It really is such a great product - Elon would be so proud of us.
-							<span class="text-muted">We're a great bunch of people.</span>
-						</p>
-					</div>
+			<div class="container-fluid bg-ohmeGray text-dark py-5">
+				<div class="row justify-content-md-center justify-content-sm-start my-5">
 				</div>
-				<div class="row my-5 py-5">
-					<div class="col-md-4 col-sm-6 my-1">
-						<div class="card bg-primary text-light border-0">
-							<img src="images/card_1.png" class="card-img-top" alt="..." />
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">
-									Some quick example text to build on the card title and make up
-									the bulk of the card's content.
-								</p>
-								<a href="#" class="btn btn-light text-dark fw-semibold"
-									>Go somewhere</a
-								>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 my-1">
+				<div class="row my-5">
+					<h3 class="fw-bold display-4">
+						Features
+					</h3>
+					<!-- Stats Box -->
+					<div class="col-md-3 col-sm-6 my-1">
 						<div class="card">
-							<img src="images/card_2.png" class="card-img-top" alt="..." />
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
+								<h3 class="card-title">Statistics</h3>
 								<p class="card-text">
-									Some quick example text to build on the card title and make up
-									the bulk of the card's content.
+									See where your energy goes! Dive into daily, weekly, and monthly trends with the Energy Calendar and make smarter decisions for a cleaner, more efficient future.
 								</p>
 								<a href="#" class="btn btn-primary text-light fw-semibold"
 									>Go somewhere</a
@@ -122,14 +100,41 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6 my-1">
+					<!-- Goals Box -->
+					<div class="col-md-3 col-sm-6 my-1">
 						<div class="card">
-							<img src="images/card_3.png" class="card-img-top" alt="..." />
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
+								<h3 class="card-title">Goals</h3>
 								<p class="card-text">
-									Some quick example text to build on the card title and make up
-									the bulk of the card's content.
+									Big or small, every energy-saving goal counts! Monitor your progress, set new targets, and get that satisfying progress bar moving. You’ll be saving energy—and money—in no time.
+								</p>
+								<a href="#" class="btn btn-primary text-light fw-semibold"
+									>Go somewhere</a
+								>
+							</div>
+						</div>
+					</div>
+					<!-- Controller Box -->
+					<div class="col-md-3 col-sm-6 my-1">
+						<div class="card">
+							<div class="card-body">
+								<h3 class="card-title">Controller</h3>
+								<p class="card-text">
+									Left the lights on? Want to save energy on that fridge? Control your appliances with just a tap! Whether you’re at work or out for coffee, your home is always in your hands.
+								</p>
+								<a href="#" class="btn btn-primary text-light fw-semibold"
+									>Go somewhere</a
+								>
+							</div>
+						</div>
+					</div>
+					<!-- Tips Box -->
+					<div class="col-md-3 col-sm-6 my-1">
+						<div class="card">
+							<div class="card-body">
+								<h3 class="card-title">Tips</h3>
+								<p class="card-text">
+									Get personalized energy-saving tips tailored just for you! Whether it’s small changes or big wins, these tips will help you save money, reduce waste, and make your home cleaner and greener.
 								</p>
 								<a href="#" class="btn btn-primary text-light fw-semibold"
 									>Go somewhere</a
@@ -138,260 +143,47 @@
 						</div>
 					</div>
 				</div>
-				<hr class="border border-1 opacity-10 my-3" />
-				<div class="row my-5 justify-content-sm-center">
-					<div
-						class="col-3 btn-group"
-						role="group"
-						aria-label="Basic mixed styles example"
-					>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-						<button type="button" class="btn btn-outline-warning border-0">
-							<i class="bi bi-star-fill fs-3"></i>
-						</button>
-					</div>
-				</div>
-				<div class="row text-center">
-					<div class="col-md-4 py-2">
-						<h3>Title</h3>
-						<p class="text-secondary fw-3 fs-5">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-							dolor ad magnam ullam aperiam est ducimus? Magnam, voluptatum
-							tempora. Veniam!
-						</p>
-					</div>
-					<div class="col-md-4 py-2">
-						<h3>Title</h3>
-						<p class="text-secondary fw-3 fs-5">
-							Minima eius ipsam cupiditate illum excepturi. A quis, excepturi,
-							magnam minima expedita maiores et cum nisi aspernatur commodi,
-							temporibus eius.
-						</p>
-					</div>
-					<div class="col-md-4 py-2">
-						<h3>Title</h3>
-						<p class="text-secondary fw-3 fs-5">
-							Eaque tempore consequatur porro ratione id ipsum excepturi
-							quisquam dolorum quibusdam ex laborum aliquid, necessitatibus
-							autem exercitationem corrupti officia doloribus.
-						</p>
-					</div>
-				</div>
 			</div>
-			<div
-				class="container-fluid bg-dark text-light my-5 py-5"
-				id="#testimonial"
-			>
-				<div class="container-lg">
-					<div class="row justify-content-center">
-						<div class="col-7 text-center">
-							<p class="text-uppercase fw-bold fs-6">
-								<small>Testimonial</small>
-							</p>
-							<p class="text-md-center fs-2 fw-semibold py-5">
-								“innovative solution. Simplicity and ease of communication with
-								customers and friends. I recommend it.”
-							</p>
-							<img
-								src="images/headshot.jpg"
-								class="img-fluid img-thumbnail rounded-circle"
-								alt="..."
-							/>
-							<p class="fw-semibold text-uppercase py-5">
-								Anna Moringo / <span class="fw-light">Project Manager</span>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
+			
+
+			<!-- Info section -->
 			<div class="container-lg my-5 py-5">
-				<div class="row justify-content-center">
-					<div class="col-5 text-center">
-						<i class="display-1 text-success bi bi-boxes"></i>
-					</div>
-				</div>
-				<div class="row d-flex align-items-center">
-					<div class="col-md-6">
-						<p class="text-uppercase fw-bold fs-6 text-primary">
-							<small>Get Started</small>
-						</p>
-						<h1 class="fw-bold lh-1 display-5">
-							This really is a great product!
-						</h1>
-						<p class="fw-semibold text-secondary">
-							If you BUY now, I’ll be sending you another mystery bonus as a
-							token of appreciation. I’m selling this for $297 but you’re
-							getting it for FREE Today!
-						</p>
-					</div>
-					<div class="col">
-						<img src="images/2.png" class="img-fluid" lt="" />
-					</div>
-				</div>
-				<hr class="border border-1 opacity-10" />
+				<!-- Section1 -->
 				<div class="row d-flex align-items-center">
 					<div class="col">
-						<img src="images/3.png" class="img-fluid" lt="" />
+						<img src="images/ilus1.png" class="img-fluid" lt="" />
 					</div>
 					<div class="col-md-6">
-						<p class="text-uppercase fw-bold fs-6 text-primary">
-							<small>Get Started</small>
-						</p>
-						<h1 class="fw-bold lh-1 display-5">
-							This really is a great product!
-						</h1>
-						<p class="fw-semibold text-secondary">
-							If you BUY now, I’ll be sending you another mystery bonus as a
-							token of appreciation. I’m selling this for $297 but you’re
-							getting it for FREE Today!
-						</p>
-						<div class="row py-5">
-							<div class="col-6">
-								<i class="bi bi-check2-circle text-primary fs-5 fw-bold"></i>
-								<h4>Title</h4>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Magnam odio assumenda minus illum eligendi eius.
-								</p>
-							</div>
-							<div class="col-6">
-								<i class="bi bi-check2-circle text-primary fs-5 fw-bold"></i>
-								<h4>Title</h4>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Magnam odio assumenda minus illum eligendi eius.
-								</p>
-							</div>
-						</div>
+						<h3 class="fw-medium lh-1 display-5">
+							Monitor your energy usage and keep track of your consumption in real-time. Identifying areas where you can improve efficiency will help reduce waste and optimize your energy use.
+						</h3>
 					</div>
 				</div>
-				<hr class="border border-1 opacity-10" />
-				<div
-					class="row justify-content-md-center justify-content-sm-start pt-3"
-				>
-					<div class="col-8">
-						<p class="text-md-center text-primary text-uppercase fw-bold fs-6">
-							<small>FAQ</small>
-						</p>
-						<p class="text-md-center fs-2 fw-semibold py-3">
-							List of questions and answers about our community
-						</p>
+				<!-- Section2 -->
+				<div class="row d-flex align-items-center bg-ohmeGray">
+					<div class="col-md-6">
+						<h3 class="fw-medium lh-1 display-5">
+							Save money with personalized tips designed around your habits. These smart suggestions help lower your energy bills by encouraging smarter energy choices.
+						</h3>
 					</div>
-					<div class="row">
-						<div class="col-md-6 d-flex">
-							<div class="px-5">
-								<i
-									class="bi bi-1-circle text-primary fs-3 align-self-start"
-								></i>
-							</div>
-							<div>
-								<h3>Get Started</h3>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Ipsa, incidunt maiores! Unde error sint suscipit.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6 d-flex">
-							<div class="px-5">
-								<i
-									class="bi bi-2-circle text-primary fs-3 align-self-start"
-								></i>
-							</div>
-							<div>
-								<h3>Get Started</h3>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Ipsa, incidunt maiores! Unde error sint suscipit.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6 d-flex">
-							<div class="px-5">
-								<i
-									class="bi bi-3-circle text-primary fs-3 align-self-start"
-								></i>
-							</div>
-							<div>
-								<h3>Get Started</h3>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Ipsa, incidunt maiores! Unde error sint suscipit.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6 d-flex">
-							<div class="px-5">
-								<i
-									class="bi bi-4-circle text-primary fs-3 align-self-start"
-								></i>
-							</div>
-							<div>
-								<h3>Get Started</h3>
-								<p>
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-									Ipsa, incidunt maiores! Unde error sint suscipit.
-								</p>
-							</div>
-						</div>
+					<div class="col-md-6">
+						<img src="images/ilus2.png" class="img-fluid" lt="" />
+					</div>
+				</div>
+				<!-- Section3 -->
+				<div class="row d-flex align-items-center">
+					<div class="col">
+						<img src="images/ilus3.png" class="img-fluid" lt="" />
+					</div>
+					<div class="col-md-6">
+						<h3 class="fw-medium lh-1 display-5">
+							Explore clean energy solutions and make sustainable choices. Whether you're at home, work, or on the go, you can find eco-friendly alternatives that help reduce your carbon footprint.
+						</h3>
 					</div>
 				</div>
 			</div>
 
-			<div class="container-fluid bg-light">
-				<div class="container-lg">
-					<div class="row justify-content-center mt-5 py-5">
-						<div class="col-5 text-center py-5">
-							<i class="display-1 text-success bi bi-envelope-fill"></i>
-						</div>
-						<div class="row justify-content-md-center justify-content-sm-start">
-							<div class="col-md-8">
-								<p
-									class="text-md-center text-success text-uppercase fw-bold fs-6"
-								>
-									<small>Get Started</small>
-								</p>
-								<p class="text-md-center fs-2 fw-semibold">
-									It really is such a great product - Elon would be so proud of
-									us.
-									<span class="text-muted">We're a great bunch of people.</span>
-								</p>
-								<p class="text-md-center py-2">
-									Leave us your e-mail and we will get back to you. This is the
-									first step to becoming a tester.
-								</p>
-								<div class="input-group pt-2 pb-5">
-									<input
-										type="text"
-										class="form-control py-3"
-										placeholder="Recipient's username"
-										aria-label="Recipient's username"
-										aria-describedby="button-addon2"
-									/>
-									<button
-										class="btn btn-outline-secondary"
-										type="button"
-										id="button-addon2"
-									>
-										Button
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<!-- Footer -->
 			<div class="container-fluid bg-dark text-light py-5">
 				<div class="container-lg">
 					<div class="row">

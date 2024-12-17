@@ -1,9 +1,25 @@
+//Import Functions
+@import "../node_modules/bootstrap/scss/functions";
+
 $backround-colour: rgb(86, 187, 182);
 
 .bg-light-overwritten{
     backround-colour: $backround-colour;
 }
 
+
+
 $primary: red;
+
+//Variables and Mixins
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$custom-colors:(
+    "ohmeBlue": #41A3FF,
+    "ohmeGray": #EBEBEB
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
