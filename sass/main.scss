@@ -1,0 +1,9 @@
+$backround-colour: rgb(86, 187, 182);
+
+.bg-light-overwritten{
+    backround-colour: $backround-colour;
+}
+
+$primary: red;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
