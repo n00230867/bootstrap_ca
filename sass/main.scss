@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Afacad', cursive;
+        }
+
+        h4, h5, p {
+            font-family: 'Afacad', cursive;
+        }
+
+
 //Import Functions
 @import "../node_modules/bootstrap/scss/functions";
 
@@ -33,4 +48,21 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     display: flex;
     flex-direction: column;
     justify-content: space-between; // Ensures the button stays at the bottom
+
+    .feature-icon {
+        width: 90px; // Size of the icon
+        height: 90px; // Size of the icon
+        position: absolute;
+        top: -35px; // Move up
+        left: 70%; // Move to 75% from the left
+        transform: translateX(-50%); // Center the icon horizontally
+    }
+
+    .card-text {
+        font-size: 18px; // Set font size to 16 pixels
+        font-weight: 500; // Set font weight to regular (400)
+        line-height: 2;
+        padding-bottom: 20px;
+    }
 }
+
