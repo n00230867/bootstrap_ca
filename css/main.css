@@ -39,6 +39,7 @@
   --bs-dark: #212529;
   --bs-ohmeBlue: #41A3FF;
   --bs-ohmeGray: #EBEBEB;
+  --bs-ohmeDGray: #999797;
   --bs-primary-rgb: 255, 0, 0;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -49,6 +50,7 @@
   --bs-dark-rgb: 33, 37, 41;
   --bs-ohmeBlue-rgb: 65, 163, 255;
   --bs-ohmeGray-rgb: 235, 235, 235;
+  --bs-ohmeDGray-rgb: 153, 151, 151;
   --bs-primary-text-emphasis: #660000;
   --bs-secondary-text-emphasis: #2b2f32;
   --bs-success-text-emphasis: #0a3622;
@@ -3183,6 +3185,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #EBEBEB;
 }
 
+.btn-ohmeDGray {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #999797;
+  --bs-btn-border-color: #999797;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #a8a7a7;
+  --bs-btn-hover-border-color: #a3a1a1;
+  --bs-btn-focus-shadow-rgb: 130, 128, 128;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #adacac;
+  --bs-btn-active-border-color: #a3a1a1;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #999797;
+  --bs-btn-disabled-border-color: #999797;
+}
+
 .btn-outline-primary {
   --bs-btn-color: red;
   --bs-btn-border-color: red;
@@ -3350,6 +3369,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #EBEBEB;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #EBEBEB;
+  --bs-gradient: none;
+}
+
+.btn-outline-ohmeDGray {
+  --bs-btn-color: #999797;
+  --bs-btn-border-color: #999797;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #999797;
+  --bs-btn-hover-border-color: #999797;
+  --bs-btn-focus-shadow-rgb: 153, 151, 151;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #999797;
+  --bs-btn-active-border-color: #999797;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #999797;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #999797;
   --bs-gradient: none;
 }
 
@@ -4992,6 +5028,13 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-ohmeGray-text-emphasis);
 }
 
+.alert-ohmeDGray {
+  --bs-alert-color: var(--bs-ohmeDGray-text-emphasis);
+  --bs-alert-bg: var(--bs-ohmeDGray-bg-subtle);
+  --bs-alert-border-color: var(--bs-ohmeDGray-border-subtle);
+  --bs-alert-link-color: var(--bs-ohmeDGray-text-emphasis);
+}
+
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5421,6 +5464,19 @@ textarea.form-control-lg {
   --bs-list-group-active-color: var(--bs-ohmeGray-bg-subtle);
   --bs-list-group-active-bg: var(--bs-ohmeGray-text-emphasis);
   --bs-list-group-active-border-color: var(--bs-ohmeGray-text-emphasis);
+}
+
+.list-group-item-ohmeDGray {
+  --bs-list-group-color: var(--bs-ohmeDGray-text-emphasis);
+  --bs-list-group-bg: var(--bs-ohmeDGray-bg-subtle);
+  --bs-list-group-border-color: var(--bs-ohmeDGray-border-subtle);
+  --bs-list-group-action-hover-color: var(--bs-emphasis-color);
+  --bs-list-group-action-hover-bg: var(--bs-ohmeDGray-border-subtle);
+  --bs-list-group-action-active-color: var(--bs-emphasis-color);
+  --bs-list-group-action-active-bg: var(--bs-ohmeDGray-border-subtle);
+  --bs-list-group-active-color: var(--bs-ohmeDGray-bg-subtle);
+  --bs-list-group-active-bg: var(--bs-ohmeDGray-text-emphasis);
+  --bs-list-group-active-border-color: var(--bs-ohmeDGray-text-emphasis);
 }
 
 .btn-close {
@@ -6957,6 +7013,11 @@ textarea.form-control-lg {
   background-color: RGBA(var(--bs-ohmeGray-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-ohmeDGray {
+  color: #000 !important;
+  background-color: RGBA(var(--bs-ohmeDGray-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
 .link-primary {
   color: RGBA(var(--bs-primary-rgb), var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(var(--bs-primary-rgb), var(--bs-link-underline-opacity, 1)) !important;
@@ -7045,6 +7106,15 @@ textarea.form-control-lg {
 .link-ohmeGray:hover, .link-ohmeGray:focus {
   color: RGBA(239, 239, 239, var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(239, 239, 239, var(--bs-link-underline-opacity, 1)) !important;
+}
+
+.link-ohmeDGray {
+  color: RGBA(var(--bs-ohmeDGray-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(var(--bs-ohmeDGray-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-ohmeDGray:hover, .link-ohmeDGray:focus {
+  color: RGBA(173, 172, 172, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(173, 172, 172, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-body-emphasis {
@@ -7491,6 +7561,10 @@ textarea.form-control-lg {
   --bs-focus-ring-color: rgba(var(--bs-ohmeGray-rgb), var(--bs-focus-ring-opacity));
 }
 
+.focus-ring-ohmeDGray {
+  --bs-focus-ring-color: rgba(var(--bs-ohmeDGray-rgb), var(--bs-focus-ring-opacity));
+}
+
 .position-static {
   position: static !important;
 }
@@ -7659,6 +7733,11 @@ textarea.form-control-lg {
 .border-ohmeGray {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-ohmeGray-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-ohmeDGray {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-ohmeDGray-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-black {
@@ -8628,6 +8707,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-ohmeGray-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-ohmeDGray {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-ohmeDGray-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -8840,6 +8924,11 @@ textarea.form-control-lg {
   text-decoration-color: rgba(var(--bs-ohmeGray-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
+.link-underline-ohmeDGray {
+  --bs-link-underline-opacity: 1;
+  text-decoration-color: rgba(var(--bs-ohmeDGray-rgb), var(--bs-link-underline-opacity)) !important;
+}
+
 .link-underline {
   --bs-link-underline-opacity: 1;
   text-decoration-color: rgba(var(--bs-link-color-rgb), var(--bs-link-underline-opacity, 1)) !important;
@@ -8941,6 +9030,11 @@ textarea.form-control-lg {
 .bg-ohmeGray {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-ohmeGray-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-ohmeDGray {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-ohmeDGray-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
@@ -12152,4 +12246,17 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.card {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

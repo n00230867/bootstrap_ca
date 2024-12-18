@@ -11,9 +11,26 @@ $primary: red;
 
 $custom-colors:(
     "ohmeBlue": #41A3FF,
-    "ohmeGray": #EBEBEB
+    "ohmeGray": #EBEBEB,
+    "ohmeDGray": #999797
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// Custom styles
+.card {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column; // Ensures the content is stacked vertically
+    border-radius: 15px;
+}
+
+.card-body {
+    flex: 1; // Makes the card body take up the available space
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // Ensures the button stays at the bottom
+}
