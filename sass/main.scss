@@ -13,12 +13,22 @@
         }
 
 
+    $display-font-sizes: (
+        1: 5rem,
+        2: 4.5rem,
+        3: 4rem,
+        4: 3.5rem,
+        5: 3rem,
+        6: 2.5rem,
+        7: 12.5rem
+    );
+
 //Import Functions
 @import "../node_modules/bootstrap/scss/functions";
 
 
 
-$primary: red;
+$primary: #41A3FF;
 
 //Variables and Mixins
 @import "../node_modules/bootstrap/scss/variables";
@@ -64,4 +74,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
         line-height: 2;
         padding-bottom: 20px;
     }
+}
+
+footer h2 {
+    font-weight: bold; // Makes h2 bold
+}
+
+footer h4 {
+    font-weight: normal; // Makes h4 not bold
+    line-height: 40px;
 }
