@@ -1,27 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
-        h1, h2, h3 {
-            font-family: 'Afacad', cursive;
-        }
+h1,
+h2,
+h3 {
+    font-family: 'Afacad', cursive;
+}
 
-        h4, h5, p {
-            font-family: 'Afacad', cursive;
-        }
+h4,
+h5,
+p {
+    font-family: 'Afacad', cursive;
+}
 
 
-    $display-font-sizes: (
-        1: 5rem,
-        2: 4.5rem,
-        3: 4rem,
-        4: 3.5rem,
-        5: 3rem,
-        6: 2.5rem,
-        7: 12.5rem
-    );
+$display-font-sizes: (
+    1: 5rem,
+    2: 4.5rem,
+    3: 4rem,
+    4: 3.5rem,
+    5: 3rem,
+    6: 2.5rem,
+    7: 12.5rem
+);
 
 //Import Functions
 @import "../node_modules/bootstrap/scss/functions";
@@ -34,7 +38,7 @@ $primary: #41A3FF;
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
-$custom-colors:(
+$custom-colors: (
     "ohmeBlue": #41A3FF,
     "ohmeYellow": #FFC800,
     "ohmeGray": #EBEBEB,
@@ -45,6 +49,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Ensure the background is transparent */
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(200deg); /* Adjust the filter to achieve blue color */
+}
 
 // Custom styles
 .card {
@@ -84,4 +93,35 @@ footer h2 {
 footer h4 {
     font-weight: normal; // Makes h4 not bold
     line-height: 40px;
+}
+
+// Custom styles
+$accordion-button-padding: 7rem; // Increase padding
+$accordion-button-font-size: 1.5rem; // Increase font size
+$accordion-body-font-size: 1.25rem; // Increase font size for body
+$accordion-body-padding: 1.5rem; // Increase padding for body
+
+.accordion-button {
+    padding: $accordion-button-padding;
+    font-size: $accordion-button-font-size;
+    outline: none; // Remove the default outline
+    background-color: transparent; // Ensure background color is transparent
+    border: none; // Remove any border
+    color: inherit; // Ensure text color is inherited
+
+    &:focus {
+        outline: none; // Remove the default outline on focus
+        box-shadow: none; // Remove any box shadow on focus
+        background-color: transparent; // Ensure background remains transparent
+        border: none; // Ensure no border is applied
+    }
+
+    &:hover {
+        background-color: transparent; // Ensure background remains transparent on hover
+    }
+}
+
+.accordion-body {
+    font-size: $accordion-body-font-size;
+    padding: $accordion-body-padding;
 }

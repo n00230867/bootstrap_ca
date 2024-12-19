@@ -4,11 +4,18 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1, .h1, h2, .h2, h3, .h3 {
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3 {
   font-family: "Afacad", cursive;
 }
 
-h4, .h4, h5, .h5, p {
+h4, .h4,
+h5,
+.h5,
+p {
   font-family: "Afacad", cursive;
 }
 
@@ -12365,6 +12372,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent; /* Ensure the background is transparent */
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(200deg); /* Adjust the filter to achieve blue color */
+}
+
 .card {
   min-height: 250px;
   display: flex;
@@ -12400,4 +12413,27 @@ footer h2, footer .h2 {
 footer h4, footer .h4 {
   font-weight: normal;
   line-height: 40px;
+}
+
+.accordion-button {
+  padding: 7rem;
+  font-size: 1.5rem;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+}
+.accordion-button:hover {
+  background-color: transparent;
+}
+
+.accordion-body {
+  font-size: 1.25rem;
+  padding: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
