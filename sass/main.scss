@@ -51,73 +51,74 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: transparent; /* Ensure the background is transparent */
-    filter: invert(1) sepia(1) saturate(5) hue-rotate(200deg); /* Adjust the filter to achieve blue color */
+    background-color: transparent;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(200deg);
 }
 
 // Custom styles
+$accordion-button-padding: 7rem;
+$accordion-button-font-size: 1.5rem;
+$accordion-body-font-size: 1.25rem;
+$accordion-body-padding: 1.5rem;
+
 .card {
     min-height: 250px;
     display: flex;
-    flex-direction: column; // Ensures the content is stacked vertically
-    border-radius: 15px;
-}
-
-.card-body {
-    flex: 1; // Makes the card body take up the available space
-    display: flex;
     flex-direction: column;
-    justify-content: space-between; // Ensures the button stays at the bottom
+    border-radius: 15px;
 
-    .feature-icon {
-        width: 90px; // Size of the icon
-        height: 90px; // Size of the icon
-        position: absolute;
-        top: -35px; // Move up
-        left: 70%; // Move to 75% from the left
-        transform: translateX(-50%); // Center the icon horizontally
+    .card-body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .feature-icon {
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            top: -35px;
+            left: 70%;
+            transform: translateX(-50%);
+        }
+
+        .card-text {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 2;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+footer {
+    h2 {
+        font-weight: bold;
     }
 
-    .card-text {
-        font-size: 18px; // Set font size to 16 pixels
-        font-weight: 500; // Set font weight to regular (400)
-        line-height: 2;
-        padding-bottom: 20px;
+    h4 {
+        font-weight: normal;
+        line-height: 40px;
     }
 }
-
-footer h2 {
-    font-weight: bold; // Makes h2 bold
-}
-
-footer h4 {
-    font-weight: normal; // Makes h4 not bold
-    line-height: 40px;
-}
-
-// Custom styles
-$accordion-button-padding: 7rem; // Increase padding
-$accordion-button-font-size: 1.5rem; // Increase font size
-$accordion-body-font-size: 1.25rem; // Increase font size for body
-$accordion-body-padding: 1.5rem; // Increase padding for body
 
 .accordion-button {
     padding: $accordion-button-padding;
     font-size: $accordion-button-font-size;
-    outline: none; // Remove the default outline
-    background-color: transparent; // Ensure background color is transparent
-    border: none; // Remove any border
-    color: inherit; // Ensure text color is inherited
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: inherit;
 
     &:focus {
-        outline: none; // Remove the default outline on focus
-        box-shadow: none; // Remove any box shadow on focus
-        background-color: transparent; // Ensure background remains transparent
-        border: none; // Ensure no border is applied
+        outline: none;
+        box-shadow: none;
+        background-color: transparent;
+        border: none;
     }
 
     &:hover {
-        background-color: transparent; // Ensure background remains transparent on hover
+        background-color: transparent;
     }
 }
 
